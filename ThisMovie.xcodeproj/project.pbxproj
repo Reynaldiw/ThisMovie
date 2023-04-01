@@ -17,6 +17,7 @@
 		3639A17629D85663006B1C3C /* MovieGenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3639A17529D85663006B1C3C /* MovieGenreCell.swift */; };
 		3639A17829D859E0006B1C3C /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3639A17729D859E0006B1C3C /* GenreCell.swift */; };
 		3639A17A29D85BA8006B1C3C /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3639A17929D85BA8006B1C3C /* MovieItem.swift */; };
+		3639A17C29D85BEB006B1C3C /* GenreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3639A17B29D85BEB006B1C3C /* GenreItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3639A17529D85663006B1C3C /* MovieGenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreCell.swift; sourceTree = "<group>"; };
 		3639A17729D859E0006B1C3C /* GenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
 		3639A17929D85BA8006B1C3C /* MovieItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
+		3639A17B29D85BEB006B1C3C /* GenreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				3639A17929D85BA8006B1C3C /* MovieItem.swift */,
+				3639A17B29D85BEB006B1C3C /* GenreItem.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				3639A17A29D85BA8006B1C3C /* MovieItem.swift in Sources */,
 				3639A17629D85663006B1C3C /* MovieGenreCell.swift in Sources */,
+				3639A17C29D85BEB006B1C3C /* GenreItem.swift in Sources */,
 				3639A16D29D81A33006B1C3C /* MovieListViewController.swift in Sources */,
 				3639A14B29D8166E006B1C3C /* AppDelegate.swift in Sources */,
 				3639A17229D85150006B1C3C /* MovieCell.swift in Sources */,
