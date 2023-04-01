@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="MovieCell" customModule="ThisMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mj-NP-AJN" userLabel="Container Content View">
+                        <rect key="frame" x="20" y="6" width="296" height="119"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ra1-zZ-TNa">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="0l4-70-AVT"/>
+                                    <constraint firstAttribute="height" constant="70" id="8gx-h4-gPp"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Cuz-nP-Th6">
+                                <rect key="frame" x="76" y="0.0" width="220" height="119"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avatar: The Way of Water " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAx-uP-ehc" userLabel="Movie title">
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdO-7i-WdC" userLabel="Movie Overview">
+                                        <rect key="frame" x="0.0" y="22" width="216.33333333333334" height="77.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 Juni 2022" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hka-Sb-qj1" userLabel="Movie Release Date">
+                                        <rect key="frame" x="0.0" y="103.33333333333333" width="78" height="15.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Cuz-nP-Th6" secondAttribute="trailing" id="1DD-Lc-8sV"/>
+                            <constraint firstItem="Ra1-zZ-TNa" firstAttribute="top" secondItem="3mj-NP-AJN" secondAttribute="top" id="1vX-uw-5Ur"/>
+                            <constraint firstItem="Ra1-zZ-TNa" firstAttribute="leading" secondItem="3mj-NP-AJN" secondAttribute="leading" id="QP8-Vf-cCT"/>
+                            <constraint firstItem="Cuz-nP-Th6" firstAttribute="top" secondItem="3mj-NP-AJN" secondAttribute="top" id="do4-vo-kYF"/>
+                            <constraint firstAttribute="bottom" secondItem="Cuz-nP-Th6" secondAttribute="bottom" id="dyg-UP-ijZ"/>
+                            <constraint firstItem="Cuz-nP-Th6" firstAttribute="leading" secondItem="Ra1-zZ-TNa" secondAttribute="trailing" constant="6" id="gzM-WI-ZFy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3mj-NP-AJN" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="EWp-0z-9aW"/>
+                    <constraint firstItem="3mj-NP-AJN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="999" constant="6" id="F9T-gd-IID"/>
+                    <constraint firstItem="3mj-NP-AJN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="a2A-yh-Hs9"/>
+                    <constraint firstAttribute="bottom" secondItem="3mj-NP-AJN" secondAttribute="bottom" priority="999" constant="6" id="ppU-9i-qV9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="overviewLabel" destination="zdO-7i-WdC" id="y0P-YH-hdY"/>
+                <outlet property="releaseDateLabel" destination="Hka-Sb-qj1" id="OUt-7R-K1U"/>
+                <outlet property="teaserImageView" destination="Ra1-zZ-TNa" id="xAz-05-wqp"/>
+                <outlet property="titleLabel" destination="JAx-uP-ehc" id="dce-Zq-nlk"/>
+            </connections>
+            <point key="canvasLocation" x="7.6335877862595414" y="24.295774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
