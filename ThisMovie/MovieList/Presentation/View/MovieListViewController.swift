@@ -15,7 +15,12 @@ final class MovieListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureView()
         loadGenres()
+    }
+    
+    private func configureView() {
+        tableView.separatorStyle = .none
     }
     
     private func loadGenres() {
