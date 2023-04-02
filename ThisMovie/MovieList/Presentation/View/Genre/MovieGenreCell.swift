@@ -69,7 +69,7 @@ extension MovieGenreCell: UICollectionViewDelegate, UICollectionViewDataSource, 
 
 private extension GenreCell {
     func configureView(with genreName: String) {
-        configureView()
+        configureDefaultView()
         genreLabel.text = genreName
     }
 }

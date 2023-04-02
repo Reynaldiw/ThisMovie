@@ -24,7 +24,7 @@ final class GenreCell: UICollectionViewCell {
         return label
     }()
     
-    public func configureView() {
+    public func configureDefaultView() {
         containerView.frame = contentView.bounds
         containerView.layer.cornerRadius = frame.size.height / 2
         containerView.clipsToBounds = true
