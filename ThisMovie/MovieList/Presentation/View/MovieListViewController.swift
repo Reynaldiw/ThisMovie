@@ -48,7 +48,7 @@ extension MovieListViewController {
 }
 
 extension MovieListViewController: MovieGenreCellDelegate {
-    func didSelect(_ genre: MovieGenreViewModel) {
+    func didSelect(_ genre: GenreItem) {
         print("Selected genre \(genre)")
     }
 }
@@ -57,7 +57,7 @@ private extension MovieGenreCell {
     func configureView(with genreModel: [GenreItem]) {
         configureView()
         genreCollectionModel.removeAll()
-        genreCollectionModel = genreModel.toViewModels()
+        genreCollectionModel = genreModel
         genreCollectionView.reloadData()
     }
 }
@@ -74,11 +74,5 @@ private extension GenreItem {
             GenreItem(id: 28, name: "Drama"),
             GenreItem(id: 28, name: "Family")
         ]
-    }
-}
-
-private extension Collection where Element == GenreItem {
-    func toViewModels() -> [MovieGenreViewModel] {
-        return map { .init(name: $0.name) }
     }
 }
