@@ -7,9 +7,14 @@
 
 import UIKit
 
+protocol MovieGenreCellDelegate: AnyObject {
+    func didSelect(_ genre: MovieGenreViewModel)
+}
+
 final class MovieGenreCell: UITableViewCell {
     
     public var genreCollectionModel = [MovieGenreViewModel]()
+    public weak var delegate: MovieGenreCellDelegate?
     
     public var genreCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -70,6 +75,13 @@ extension MovieGenreCell: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 8
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard genreCollectionModel.count > indexPath.item else { return }
+        
+        let selectedModel = genreCollectionModel[indexPath.item]
+        delegate?.didSelect(selectedModel)
     }
 }
 

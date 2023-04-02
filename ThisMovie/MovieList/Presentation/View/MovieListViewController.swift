@@ -36,6 +36,7 @@ extension MovieListViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = MovieGenreCell()
+        cell.delegate = self
         cell.configureView(with: genreModel)
         
         return cell
@@ -43,6 +44,12 @@ extension MovieListViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 72
+    }
+}
+
+extension MovieListViewController: MovieGenreCellDelegate {
+    func didSelect(_ genre: MovieGenreViewModel) {
+        print("Selected genre \(genre)")
     }
 }
 
