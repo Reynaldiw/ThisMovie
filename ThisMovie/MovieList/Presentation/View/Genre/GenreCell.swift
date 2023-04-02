@@ -11,13 +11,14 @@ final class GenreCell: UICollectionViewCell {
     
     public var containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.blue
+        view.layer.borderWidth = 1.0
+        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     public var genreLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.white
         label.font = .systemFont(ofSize: 14)
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -25,11 +26,24 @@ final class GenreCell: UICollectionViewCell {
     }()
     
     public func configureDefaultView() {
-        containerView.frame = contentView.bounds
-        containerView.layer.cornerRadius = frame.size.height / 2
-        containerView.clipsToBounds = true
+        configureContainerView()
+        configureLabel()
+    }
+    
+    public func configureSelectedView() {
+        containerView.backgroundColor = .darkGray
+        genreLabel.textColor = .white
+    }
+    
+    private func configureContainerView() {
         contentView.addSubview(containerView)
-        
+        containerView.frame = contentView.bounds
+        containerView.clipsToBounds = true
+        containerView.backgroundColor = .clear
+        containerView.layer.cornerRadius = frame.size.height / 2
+    }
+    
+    private func configureLabel() {
         containerView.addSubview(genreLabel)
         NSLayoutConstraint.activate([
             genreLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 8),
@@ -37,5 +51,6 @@ final class GenreCell: UICollectionViewCell {
             genreLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -8),
             genreLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
         ])
+        genreLabel.textColor = .black
     }
 }
