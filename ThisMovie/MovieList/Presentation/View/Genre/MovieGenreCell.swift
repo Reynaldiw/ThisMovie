@@ -77,10 +77,3 @@ extension UICollectionViewCell {
         return String(describing: self)
     }
 }
-
-extension UICollectionView {
-    func dequeueReusableCell<T: UICollectionViewCell>(at indexPath: IndexPath) -> T {
-        let identifier = T.identifier
-        return dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! T
-    }
-}
