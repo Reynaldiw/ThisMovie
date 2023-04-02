@@ -9,13 +9,13 @@ import UIKit
 
 final class GenreCell: UICollectionViewCell {
     
-    private var containerView: UIView = {
+    public var containerView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.blue
         return view
     }()
     
-    private var genreLabel: UILabel = {
+    public var genreLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.white
         label.font = .systemFont(ofSize: 14)
@@ -23,14 +23,8 @@ final class GenreCell: UICollectionViewCell {
         return label
     }()
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        configureView()
-    }
-    
-    private func configureView() {
-        containerView.frame = bounds
+    public func configureView() {
+        containerView.frame = contentView.bounds
         containerView.layer.cornerRadius = frame.size.height / 2
         containerView.clipsToBounds = true
         addSubview(containerView)
