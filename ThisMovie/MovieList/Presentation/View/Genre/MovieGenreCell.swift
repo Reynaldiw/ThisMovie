@@ -14,6 +14,12 @@ protocol MovieGenreCellDelegate: AnyObject {
 final class MovieGenreCell: UITableViewCell {
     
     public var genreCollectionModel = [MovieGenreItem]()
+    public var selectedGenre: MovieGenreItem?
+    
+    private var genreSection: Int {
+        return 0
+    }
+    
     public weak var delegate: MovieGenreCellDelegate?
     
     public var genreCollectionView: UICollectionView = {
@@ -54,8 +60,8 @@ extension MovieGenreCell: UICollectionViewDelegate, UICollectionViewDataSource, 
         
         let genre = genreCollectionModel[indexPath.item]
         let cell: GenreCell = collectionView.dequeueReusableCell(at: indexPath)
-        cell.configureView(with: genre.name)
-        
+        cell.configureView(with: genre, ofSelected: selectedGenre)
+                
         return cell
     }
     
@@ -81,13 +87,18 @@ extension MovieGenreCell: UICollectionViewDelegate, UICollectionViewDataSource, 
         guard genreCollectionModel.count > indexPath.item else { return }
         
         let selectedModel = genreCollectionModel[indexPath.item]
+        selectedGenre = selectedModel
+        
+        genreCollectionView.reloadSections([genreSection])
         delegate?.didSelect(selectedModel)
     }
 }
 
 private extension GenreCell {
-    func configureView(with genreName: String) {
+    func configureView(with genre: MovieGenreItem, ofSelected selectedGenre: MovieGenreItem?) {
         configureDefaultView()
-        genreLabel.text = genreName
+        genreLabel.text = genre.name
+        
+        if genre.name == selectedGenre?.name { configureSelectedView() }
     }
 }
