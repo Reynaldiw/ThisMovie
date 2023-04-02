@@ -10,6 +10,7 @@ import UIKit
 final class MovieListViewController: UITableViewController {
     
     private var genreModel = [MovieGenreItem]()
+    private var selectedGenre: MovieGenreItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ final class MovieListViewController: UITableViewController {
     private func loadGenres() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             self.genreModel = MovieGenreItem.prototypeData
+            self.selectedGenre = self.genreModel.first
             self.tableView.reloadData()
         }
     }
@@ -49,7 +51,7 @@ extension MovieListViewController {
 
 extension MovieListViewController: MovieGenreCellDelegate {
     func didSelect(_ genre: MovieGenreItem) {
-        print("Selected genre \(genre)")
+        selectedGenre = genre
     }
 }
 
