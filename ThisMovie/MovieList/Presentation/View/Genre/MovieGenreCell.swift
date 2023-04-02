@@ -8,12 +8,12 @@
 import UIKit
 
 protocol MovieGenreCellDelegate: AnyObject {
-    func didSelect(_ genre: GenreItem)
+    func didSelect(_ genre: MovieGenreItem)
 }
 
 final class MovieGenreCell: UITableViewCell {
     
-    public var genreCollectionModel = [GenreItem]()
+    public var genreCollectionModel = [MovieGenreItem]()
     public weak var delegate: MovieGenreCellDelegate?
     
     public var genreCollectionView: UICollectionView = {

@@ -9,7 +9,7 @@ import UIKit
 
 final class MovieListViewController: UITableViewController {
     
-    private var genreModel = [GenreItem]()
+    private var genreModel = [MovieGenreItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ final class MovieListViewController: UITableViewController {
     
     private func loadGenres() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.genreModel = GenreItem.prototypeData
+            self.genreModel = MovieGenreItem.prototypeData
             self.tableView.reloadData()
         }
     }
@@ -48,13 +48,13 @@ extension MovieListViewController {
 }
 
 extension MovieListViewController: MovieGenreCellDelegate {
-    func didSelect(_ genre: GenreItem) {
+    func didSelect(_ genre: MovieGenreItem) {
         print("Selected genre \(genre)")
     }
 }
 
 private extension MovieGenreCell {
-    func configureView(with genreModel: [GenreItem]) {
+    func configureView(with genreModel: [MovieGenreItem]) {
         configureView()
         genreCollectionModel.removeAll()
         genreCollectionModel = genreModel
@@ -62,17 +62,17 @@ private extension MovieGenreCell {
     }
 }
 
-private extension GenreItem {
-    static var prototypeData: [GenreItem] {
+private extension MovieGenreItem {
+    static var prototypeData: [MovieGenreItem] {
         return [
-            GenreItem(id: 28, name: "Action"),
-            GenreItem(id: 28, name: "Adventure"),
-            GenreItem(id: 28, name: "Animation"),
-            GenreItem(id: 28, name: "Comedy"),
-            GenreItem(id: 28, name: "Crime"),
-            GenreItem(id: 28, name: "Documentary"),
-            GenreItem(id: 28, name: "Drama"),
-            GenreItem(id: 28, name: "Family")
+            MovieGenreItem(id: 28, name: "Action"),
+            MovieGenreItem(id: 28, name: "Adventure"),
+            MovieGenreItem(id: 28, name: "Animation"),
+            MovieGenreItem(id: 28, name: "Comedy"),
+            MovieGenreItem(id: 28, name: "Crime"),
+            MovieGenreItem(id: 28, name: "Documentary"),
+            MovieGenreItem(id: 28, name: "Drama"),
+            MovieGenreItem(id: 28, name: "Family")
         ]
     }
 }
