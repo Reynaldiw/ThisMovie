@@ -20,6 +20,7 @@ final class GenreCell: UICollectionViewCell {
         label.textColor = UIColor.white
         label.font = .systemFont(ofSize: 14)
         label.numberOfLines = 1
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -27,9 +28,14 @@ final class GenreCell: UICollectionViewCell {
         containerView.frame = contentView.bounds
         containerView.layer.cornerRadius = frame.size.height / 2
         containerView.clipsToBounds = true
-        addSubview(containerView)
+        contentView.addSubview(containerView)
         
-        addSubview(genreLabel)
-        genreLabel.center = containerView.center
+        containerView.addSubview(genreLabel)
+        NSLayoutConstraint.activate([
+            genreLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 8),
+            genreLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 8),
+            genreLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -8),
+            genreLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
+        ])
     }
 }
