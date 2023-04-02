@@ -55,7 +55,13 @@ extension MovieGenreCell: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 30)
+        guard genreCollectionModel.count > indexPath.item else { return .zero }
+
+        let genreName = genreCollectionModel[indexPath.item].name
+        var width = (genreName as NSString).size(withAttributes: [.font: UIFont.systemFont(ofSize: 14.5)]).width
+        width += 16 /* 16: Spacing leading + Trailing */
+        
+        return CGSize(width: width, height: 30)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
