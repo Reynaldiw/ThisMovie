@@ -7,6 +7,10 @@
 
 import UIKit
 
+struct MovieGenreViewModel {
+    let name: String
+}
+
 final class MovieGenreCell: UITableViewCell {
     
     private var genreCollectionView: UICollectionView = {
