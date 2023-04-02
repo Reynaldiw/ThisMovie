@@ -39,7 +39,7 @@ extension MovieListViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = MovieGenreCell()
         cell.delegate = self
-        cell.configureView(with: genreModel)
+        cell.configureView(with: genreModel, ofSelected: selectedGenre)
         
         return cell
     }
@@ -56,10 +56,11 @@ extension MovieListViewController: MovieGenreCellDelegate {
 }
 
 private extension MovieGenreCell {
-    func configureView(with genreModel: [MovieGenreItem]) {
+    func configureView(with genreModel: [MovieGenreItem], ofSelected genre: MovieGenreItem?) {
         configureView()
         genreCollectionModel.removeAll()
         genreCollectionModel = genreModel
+        selectedGenre = genre
         genreCollectionView.reloadData()
     }
 }
