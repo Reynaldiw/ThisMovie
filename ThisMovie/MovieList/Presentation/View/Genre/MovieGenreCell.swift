@@ -21,7 +21,9 @@ final class MovieGenreCell: UITableViewCell {
         
         return collectionView
     }()
-    
+}
+
+extension MovieGenreCell {
     public func configureView() {
         contentView.addSubview(genreCollectionView)
         NSLayoutConstraint.activate([
