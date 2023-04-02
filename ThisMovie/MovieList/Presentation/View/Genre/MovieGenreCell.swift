@@ -71,9 +71,3 @@ private extension GenreCell {
         genreLabel.text = genreName
     }
 }
-
-extension UICollectionViewCell {
-    static var identifier: String {
-        return String(describing: self)
-    }
-}
