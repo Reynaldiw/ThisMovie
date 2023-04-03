@@ -61,11 +61,6 @@ private extension Collection where Element == RemoteMovieGenreItem {
     }
 }
 
-internal struct RemoteMovieGenreItem: Decodable {
-    internal let id: Int
-    internal let name: String
-}
-
 extension RemoteMovieListLoader {
     private static func addPath(_ path: String, to url: URL) -> URL {
         if #available(iOS 16.0, *) {
