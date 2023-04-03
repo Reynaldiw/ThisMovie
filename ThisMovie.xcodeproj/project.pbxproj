@@ -21,6 +21,7 @@
 		368C4CC829D96C2F00C29C03 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CC729D96C2F00C29C03 /* UICollectionView+Extension.swift */; };
 		368C4CCA29D96C8600C29C03 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CC929D96C8600C29C03 /* UICollectionViewCell+Extension.swift */; };
 		368C4CCD29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CCC29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift */; };
+		36F73EE229DB09C300CB36F6 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EE129DB09C300CB36F6 /* UITableViewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		368C4CC729D96C2F00C29C03 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		368C4CC929D96C8600C29C03 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		368C4CCC29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieGenreItem+PrototypeData.swift"; sourceTree = "<group>"; };
+		36F73EE129DB09C300CB36F6 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				368C4CC729D96C2F00C29C03 /* UICollectionView+Extension.swift */,
 				368C4CC929D96C8600C29C03 /* UICollectionViewCell+Extension.swift */,
+				36F73EE129DB09C300CB36F6 /* UITableViewCell+Extension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				3639A14B29D8166E006B1C3C /* AppDelegate.swift in Sources */,
 				3639A17229D85150006B1C3C /* MovieCell.swift in Sources */,
 				368C4CC829D96C2F00C29C03 /* UICollectionView+Extension.swift in Sources */,
+				36F73EE229DB09C300CB36F6 /* UITableViewCell+Extension.swift in Sources */,
 				3639A14D29D8166E006B1C3C /* SceneDelegate.swift in Sources */,
 				3639A17829D859E0006B1C3C /* GenreCell.swift in Sources */,
 				368C4CCD29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift in Sources */,

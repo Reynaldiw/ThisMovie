@@ -119,16 +119,6 @@ private extension MovieCell {
     }
 }
 
-private extension UITableViewCell {
-    static var identifier: String {
-        return String(describing: self)
-    }
-    
-    static var nib: UINib {
-        return UINib(nibName: identifier, bundle: Bundle(for: self))
-    }
-}
-
 private extension UITableView {
     func dequeueReusableCell<T: UITableViewCell>(at indexPath: IndexPath) -> T {
         let identifier = T.identifier
