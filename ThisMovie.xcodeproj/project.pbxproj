@@ -22,6 +22,7 @@
 		368C4CCD29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CCC29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift */; };
 		36F73EE229DB09C300CB36F6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EE129DB09C300CB36F6 /* UIView+Extension.swift */; };
 		36F73EE429DB0A8B00CB36F6 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EE329DB0A8B00CB36F6 /* UITableView+Extension.swift */; };
+		36F73EE629DB0CEF00CB36F6 /* MovieItemPrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EE529DB0CEF00CB36F6 /* MovieItemPrototypeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		368C4CCC29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieGenreItem+PrototypeData.swift"; sourceTree = "<group>"; };
 		36F73EE129DB09C300CB36F6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		36F73EE329DB0A8B00CB36F6 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		36F73EE529DB0CEF00CB36F6 /* MovieItemPrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemPrototypeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				368C4CCC29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift */,
+				36F73EE529DB0CEF00CB36F6 /* MovieItemPrototypeData.swift */,
 			);
 			path = Dummies;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				3639A17A29D85BA8006B1C3C /* MovieItem.swift in Sources */,
 				3639A17629D85663006B1C3C /* MovieGenreCell.swift in Sources */,
+				36F73EE629DB0CEF00CB36F6 /* MovieItemPrototypeData.swift in Sources */,
 				3639A17C29D85BEB006B1C3C /* MovieGenreItem.swift in Sources */,
 				3639A16D29D81A33006B1C3C /* MovieListViewController.swift in Sources */,
 				3639A14B29D8166E006B1C3C /* AppDelegate.swift in Sources */,
