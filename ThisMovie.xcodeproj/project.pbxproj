@@ -29,6 +29,7 @@
 		36F73EF029DB1CF700CB36F6 /* MovieListLoaderMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EEF29DB1CF600CB36F6 /* MovieListLoaderMessageSpecs.swift */; };
 		36F73EF229DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF129DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift */; };
 		36F73EF429DB1F4F00CB36F6 /* RemoteMovieListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF329DB1F4F00CB36F6 /* RemoteMovieListLoader.swift */; };
+		36F73EF729DB21DC00CB36F6 /* MovieListHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		36F73EEF29DB1CF600CB36F6 /* MovieListLoaderMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListLoaderMessageSpecs.swift; sourceTree = "<group>"; };
 		36F73EF129DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListLoaderOutputMessageSpecs.swift; sourceTree = "<group>"; };
 		36F73EF329DB1F4F00CB36F6 /* RemoteMovieListLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMovieListLoader.swift; sourceTree = "<group>"; };
+		36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		3639A16B29D819F9006B1C3C /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				36F73EF529DB21AB00CB36F6 /* API */,
 				36F73EEE29DB1CAD00CB36F6 /* Contract */,
 				3639A16129D81829006B1C3C /* Interactor */,
 			);
@@ -225,6 +228,14 @@
 				36F73EF129DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift */,
 			);
 			path = Contract;
+			sourceTree = "<group>";
+		};
+		36F73EF529DB21AB00CB36F6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 				368C4CCD29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift in Sources */,
 				36F73EE429DB0A8B00CB36F6 /* UITableView+Extension.swift in Sources */,
 				36F73EF029DB1CF700CB36F6 /* MovieListLoaderMessageSpecs.swift in Sources */,
+				36F73EF729DB21DC00CB36F6 /* MovieListHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
