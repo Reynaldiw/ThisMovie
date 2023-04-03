@@ -1,5 +1,5 @@
 //
-//  UITableViewCell+Extension.swift
+//  UIView+Extension.swift
 //  ThisMovie
 //
 //  Created by Reynaldi on 03/04/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UITableViewCell {
+extension UIView {
     static var identifier: String {
         return String(describing: self)
     }

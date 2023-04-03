@@ -19,9 +19,8 @@
 		3639A17A29D85BA8006B1C3C /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3639A17929D85BA8006B1C3C /* MovieItem.swift */; };
 		3639A17C29D85BEB006B1C3C /* MovieGenreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3639A17B29D85BEB006B1C3C /* MovieGenreItem.swift */; };
 		368C4CC829D96C2F00C29C03 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CC729D96C2F00C29C03 /* UICollectionView+Extension.swift */; };
-		368C4CCA29D96C8600C29C03 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CC929D96C8600C29C03 /* UICollectionViewCell+Extension.swift */; };
 		368C4CCD29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CCC29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift */; };
-		36F73EE229DB09C300CB36F6 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EE129DB09C300CB36F6 /* UITableViewCell+Extension.swift */; };
+		36F73EE229DB09C300CB36F6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EE129DB09C300CB36F6 /* UIView+Extension.swift */; };
 		36F73EE429DB0A8B00CB36F6 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EE329DB0A8B00CB36F6 /* UITableView+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,9 +39,8 @@
 		3639A17929D85BA8006B1C3C /* MovieItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
 		3639A17B29D85BEB006B1C3C /* MovieGenreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreItem.swift; sourceTree = "<group>"; };
 		368C4CC729D96C2F00C29C03 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
-		368C4CC929D96C8600C29C03 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		368C4CCC29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieGenreItem+PrototypeData.swift"; sourceTree = "<group>"; };
-		36F73EE129DB09C300CB36F6 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		36F73EE129DB09C300CB36F6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		36F73EE329DB0A8B00CB36F6 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,8 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				368C4CC729D96C2F00C29C03 /* UICollectionView+Extension.swift */,
-				368C4CC929D96C8600C29C03 /* UICollectionViewCell+Extension.swift */,
-				36F73EE129DB09C300CB36F6 /* UITableViewCell+Extension.swift */,
+				36F73EE129DB09C300CB36F6 /* UIView+Extension.swift */,
 				36F73EE329DB0A8B00CB36F6 /* UITableView+Extension.swift */,
 			);
 			path = Helper;
@@ -271,11 +268,10 @@
 				3639A14B29D8166E006B1C3C /* AppDelegate.swift in Sources */,
 				3639A17229D85150006B1C3C /* MovieCell.swift in Sources */,
 				368C4CC829D96C2F00C29C03 /* UICollectionView+Extension.swift in Sources */,
-				36F73EE229DB09C300CB36F6 /* UITableViewCell+Extension.swift in Sources */,
+				36F73EE229DB09C300CB36F6 /* UIView+Extension.swift in Sources */,
 				3639A14D29D8166E006B1C3C /* SceneDelegate.swift in Sources */,
 				3639A17829D859E0006B1C3C /* GenreCell.swift in Sources */,
 				368C4CCD29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift in Sources */,
-				368C4CCA29D96C8600C29C03 /* UICollectionViewCell+Extension.swift in Sources */,
 				36F73EE429DB0A8B00CB36F6 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
