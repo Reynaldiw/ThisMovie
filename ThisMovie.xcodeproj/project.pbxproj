@@ -26,6 +26,8 @@
 		36F73EE929DB0EDB00CB36F6 /* ListMovieMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EE829DB0EDB00CB36F6 /* ListMovieMessageSpecs.swift */; };
 		36F73EEB29DB130A00CB36F6 /* ListMovieGenreMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EEA29DB130A00CB36F6 /* ListMovieGenreMessageSpecs.swift */; };
 		36F73EED29DB13D400CB36F6 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EEC29DB13D400CB36F6 /* MovieListPresenter.swift */; };
+		36F73EF029DB1CF700CB36F6 /* MovieListLoaderMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EEF29DB1CF600CB36F6 /* MovieListLoaderMessageSpecs.swift */; };
+		36F73EF229DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF129DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		36F73EE829DB0EDB00CB36F6 /* ListMovieMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieMessageSpecs.swift; sourceTree = "<group>"; };
 		36F73EEA29DB130A00CB36F6 /* ListMovieGenreMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieGenreMessageSpecs.swift; sourceTree = "<group>"; };
 		36F73EEC29DB13D400CB36F6 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
+		36F73EEF29DB1CF600CB36F6 /* MovieListLoaderMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListLoaderMessageSpecs.swift; sourceTree = "<group>"; };
+		36F73EF129DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListLoaderOutputMessageSpecs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 		3639A16B29D819F9006B1C3C /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				36F73EEE29DB1CAD00CB36F6 /* Contract */,
 				3639A16129D81829006B1C3C /* Interactor */,
 			);
 			path = Usecase;
@@ -206,6 +211,15 @@
 			children = (
 				36F73EE829DB0EDB00CB36F6 /* ListMovieMessageSpecs.swift */,
 				36F73EEA29DB130A00CB36F6 /* ListMovieGenreMessageSpecs.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		36F73EEE29DB1CAD00CB36F6 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				36F73EEF29DB1CF600CB36F6 /* MovieListLoaderMessageSpecs.swift */,
+				36F73EF129DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
@@ -288,6 +302,7 @@
 				36F73EEB29DB130A00CB36F6 /* ListMovieGenreMessageSpecs.swift in Sources */,
 				3639A17C29D85BEB006B1C3C /* MovieGenreItem.swift in Sources */,
 				3639A16D29D81A33006B1C3C /* MovieListViewController.swift in Sources */,
+				36F73EF229DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift in Sources */,
 				36F73EED29DB13D400CB36F6 /* MovieListPresenter.swift in Sources */,
 				3639A14B29D8166E006B1C3C /* AppDelegate.swift in Sources */,
 				3639A17229D85150006B1C3C /* MovieCell.swift in Sources */,
@@ -297,6 +312,7 @@
 				3639A17829D859E0006B1C3C /* GenreCell.swift in Sources */,
 				368C4CCD29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift in Sources */,
 				36F73EE429DB0A8B00CB36F6 /* UITableView+Extension.swift in Sources */,
+				36F73EF029DB1CF700CB36F6 /* MovieListLoaderMessageSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
