@@ -11,6 +11,6 @@ final class RemoteMovieListLoader: MovieListLoaderInputMessageSpecs {
     
     private var loaderOutputMessage: MovieListLoaderOutputMessageSpecs?
     
-    func fetchListMovie() {}
+    func fetchListMovie(of selectedGenre: String) {}
     func fetchListMovieGenre() {}
 }

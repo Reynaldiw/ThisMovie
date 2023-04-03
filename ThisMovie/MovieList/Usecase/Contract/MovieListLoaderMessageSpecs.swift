@@ -12,5 +12,5 @@ protocol MovieGenreListLoaderInputMessageSpecs {
 }
 
 protocol MovieListLoaderInputMessageSpecs: MovieGenreListLoaderInputMessageSpecs {
-    func fetchListMovie()
+    func fetchListMovie(of selectedGenre: String)
 }
