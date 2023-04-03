@@ -8,13 +8,11 @@
 import Foundation
 
 protocol MovieGenreListLoaderOutputMessageSpecs {
-    typealias MovieGenreResult = Swift.Result<[MovieGenreItem], Error>
-    
-    func completeFetch() -> MovieGenreResult
+    func succeedToFetch(_ movieGenres: [MovieGenreItem])
+    func failedToFetchListMovieGenre(_ error: Error)
 }
 
 protocol MovieListLoaderOutputMessageSpecs: MovieGenreListLoaderOutputMessageSpecs {
-    typealias MovieResult = Swift.Result<[MovieItem], Error>
-
-    func completeFetch() -> MovieResult
+    func succeedToFetch(_ movieGenres: [MovieItem])
+    func failedToFetchListMovie(_ error: Error)
 }
