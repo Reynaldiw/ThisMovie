@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class RemoteMovieListLoader<OutputSpec: MovieListLoaderOutputMessageSpecs>: MovieListLoaderInputMessageSpecs where OutputSpec.Movie == MovieItem, OutputSpec.Genre == MovieGenreItem {
+final class RemoteMovieListLoader: MovieListLoaderInputMessageSpecs {
     
-    private var loaderOutputMessage: OutputSpec?
+    private var loaderOutputMessage: MovieListLoaderOutputMessageSpecs?
     
     func fetchListMovie() {}
     func fetchListMovieGenre() {}
