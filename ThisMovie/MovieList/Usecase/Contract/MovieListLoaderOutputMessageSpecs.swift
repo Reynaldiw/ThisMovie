@@ -13,6 +13,6 @@ protocol MovieGenreListLoaderOutputMessageSpecs {
 }
 
 protocol MovieListLoaderOutputMessageSpecs: MovieGenreListLoaderOutputMessageSpecs {
-    func succeedToFetch(_ movieGenres: [MovieItem])
+    func succeedToFetch(_ movie: [MovieItem])
     func failedToFetchListMovie(_ error: Error)
 }

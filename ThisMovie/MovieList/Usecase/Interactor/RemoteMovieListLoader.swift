@@ -20,12 +20,11 @@ final class RemoteMovieListLoader: MovieListLoaderInputMessageSpecs {
     
     private let url: URL
     private let client: MovieListHTTPClient & MovieGenreListHTTPClient
-    private var loaderOutputMessage: MovieListLoaderOutputMessageSpecs
+    var loaderOutputMessage: MovieListLoaderOutputMessageSpecs?
     
-    init(url: URL, client: MovieListHTTPClient & MovieGenreListHTTPClient, loaderOutputMessage: MovieListLoaderOutputMessageSpecs) {
+    init(url: URL, client: MovieListHTTPClient & MovieGenreListHTTPClient) {
         self.url = url
         self.client = client
-        self.loaderOutputMessage = loaderOutputMessage
     }
     
     func fetchListMovie(of selectedGenre: String) {}
@@ -40,7 +39,7 @@ final class RemoteMovieListLoader: MovieListLoaderInputMessageSpecs {
                 self.proceedMovieGenreResult(data: data, response: response)
                 
             case .failure:
-                self.loaderOutputMessage.failedToFetchListMovieGenre(Error.connectivity)
+                self.loaderOutputMessage?.failedToFetchListMovieGenre(Error.connectivity)
             }
         }
     }
@@ -48,9 +47,9 @@ final class RemoteMovieListLoader: MovieListLoaderInputMessageSpecs {
     private func proceedMovieGenreResult(data: Data, response: HTTPURLResponse) {
         do {
             let remoteModel = try MovieGenreMapper.map(data: data, response: response)
-            loaderOutputMessage.succeedToFetch(remoteModel.toModels())
+            loaderOutputMessage?.succeedToFetch(remoteModel.toModels())
         } catch {
-            loaderOutputMessage.failedToFetchListMovieGenre(error)
+            loaderOutputMessage?.failedToFetchListMovieGenre(error)
         }
     }
 }

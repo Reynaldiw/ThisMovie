@@ -17,7 +17,7 @@ final class MovieListViewController: UITableViewController {
     typealias Movie = MovieItem
     typealias MovieGenre = MovieGenreItem
     
-    private var inputMessage: ListMovieInputMessageSpec!
+    private var inputMessage: MovieListPresenter<MovieListViewController>!
     
     private var genreItems = [MovieGenreItem]()
     private var selectedGenre: MovieGenreItem?
@@ -27,7 +27,14 @@ final class MovieListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        inputMessage = MovieListPresenter<MovieListViewController>(viewOutputMessage: self)
+        // Change composition later
+        let url = URL(string: "https://api.themoviedb.org/3")!
+        let client: MovieListHTTPClient & MovieGenreListHTTPClient = URLSessionHTTPClient()
+        let interactorInput = RemoteMovieListLoader(url: url, client: client)
+        inputMessage = MovieListPresenter<MovieListViewController>()
+        interactorInput.loaderOutputMessage = inputMessage
+        inputMessage.usecaseInputMessage = interactorInput
+        inputMessage.viewOutputMessage = self
                 
         configureView()
         inputMessage.loadGenres()
@@ -49,7 +56,9 @@ extension MovieListViewController: ListMovieOutputMessageSpec {
     func completeLoad(_ genre: [MovieGenreItem]) {
         genreItems = genre
         selectedGenre = genre[0]
-        tableView.reloadSections([MovieListSection.genres.rawValue], with: .automatic)
+        DispatchQueue.main.async {
+            self.tableView.reloadSections([MovieListSection.genres.rawValue], with: .automatic)
+        }
         
         inputMessage.loadMovies()
     }

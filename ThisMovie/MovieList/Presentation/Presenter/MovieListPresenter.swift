@@ -7,14 +7,13 @@
 
 import Foundation
 
-final class MovieListPresenter<OutputSpecs: ListMovieOutputMessageSpec>: ListMovieInputMessageSpec where OutputSpecs.Movie == MovieItem, OutputSpecs.MovieGenre == MovieGenreItem {
+final class MovieListPresenter<OutputSpecs: ListMovieOutputMessageSpec> where OutputSpecs.Movie == MovieItem, OutputSpecs.MovieGenre == MovieGenreItem {
     
     var viewOutputMessage: OutputSpecs?
-    
-    init(viewOutputMessage: OutputSpecs?) {
-        self.viewOutputMessage = viewOutputMessage
-    }
-    
+    var usecaseInputMessage: MovieListLoaderInputMessageSpecs?
+}
+
+extension MovieListPresenter: ListMovieInputMessageSpec {
     func loadMovies() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.viewOutputMessage?.completeLoad(MovieItem.prototypeData)
@@ -22,8 +21,23 @@ final class MovieListPresenter<OutputSpecs: ListMovieOutputMessageSpec>: ListMov
     }
     
     func loadGenres() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.viewOutputMessage?.completeLoad(MovieGenreItem.prototypeData)
-        }
+        usecaseInputMessage?.fetchListMovieGenre()
+    }
+}
+
+extension MovieListPresenter: MovieListLoaderOutputMessageSpecs {
+    func succeedToFetch(_ movie: [MovieItem]) {
+    }
+    
+    func failedToFetchListMovie(_ error: Error) {
+        
+    }
+    
+    func succeedToFetch(_ movieGenres: [MovieGenreItem]) {
+        self.viewOutputMessage?.completeLoad(movieGenres)
+    }
+    
+    func failedToFetchListMovieGenre(_ error: Error) {
+        print("ERROR FETCH GENRE \(error)")
     }
 }
