@@ -27,9 +27,14 @@
                                     <constraint firstAttribute="width" constant="70" id="0l4-70-AVT"/>
                                     <constraint firstAttribute="height" constant="70" id="8gx-h4-gPp"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Cuz-nP-Th6">
-                                <rect key="frame" x="76" y="0.0" width="220" height="119"/>
+                                <rect key="frame" x="80" y="0.0" width="216" height="119"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avatar: The Way of Water " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAx-uP-ehc" userLabel="Movie title">
                                         <rect key="frame" x="0.0" y="0.0" width="188" height="18"/>
@@ -38,7 +43,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdO-7i-WdC" userLabel="Movie Overview">
-                                        <rect key="frame" x="0.0" y="22" width="216.33333333333334" height="77.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="22" width="216" height="77.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -59,7 +64,7 @@
                             <constraint firstItem="Ra1-zZ-TNa" firstAttribute="leading" secondItem="3mj-NP-AJN" secondAttribute="leading" id="QP8-Vf-cCT"/>
                             <constraint firstItem="Cuz-nP-Th6" firstAttribute="top" secondItem="3mj-NP-AJN" secondAttribute="top" id="do4-vo-kYF"/>
                             <constraint firstAttribute="bottom" secondItem="Cuz-nP-Th6" secondAttribute="bottom" id="dyg-UP-ijZ"/>
-                            <constraint firstItem="Cuz-nP-Th6" firstAttribute="leading" secondItem="Ra1-zZ-TNa" secondAttribute="trailing" constant="6" id="gzM-WI-ZFy"/>
+                            <constraint firstItem="Cuz-nP-Th6" firstAttribute="leading" secondItem="Ra1-zZ-TNa" secondAttribute="trailing" constant="10" id="gzM-WI-ZFy"/>
                         </constraints>
                     </view>
                 </subviews>
