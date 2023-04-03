@@ -8,7 +8,7 @@
 import Foundation
 
 struct MovieItem {
-    let id: String
+    let id: Int
     let posterImageURL: String
     let title: String
     let overview: String
