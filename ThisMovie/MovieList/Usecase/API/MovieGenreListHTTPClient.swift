@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MovieGenreListHTTPClient {
-    typealias Result = Swift.Result<[MovieGenreItem], Error>
+    typealias Result = Swift.Result<(Data, HTTPURLResponse), Error>
     
     func getMovieGenre(from url: URL, completion: @escaping (Result) -> Void)
 }

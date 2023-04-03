@@ -31,6 +31,7 @@
 		36F73EF429DB1F4F00CB36F6 /* RemoteMovieListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF329DB1F4F00CB36F6 /* RemoteMovieListLoader.swift */; };
 		36F73EF729DB21DC00CB36F6 /* MovieListHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */; };
 		36F73EF929DB243A00CB36F6 /* MovieGenreListHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */; };
+		36F73EFB29DB246B00CB36F6 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EFA29DB246B00CB36F6 /* URLSessionHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		36F73EF329DB1F4F00CB36F6 /* RemoteMovieListLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMovieListLoader.swift; sourceTree = "<group>"; };
 		36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListHTTPClient.swift; sourceTree = "<group>"; };
 		36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreListHTTPClient.swift; sourceTree = "<group>"; };
+		36F73EFA29DB246B00CB36F6 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 			children = (
 				36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */,
 				36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */,
+				36F73EFA29DB246B00CB36F6 /* URLSessionHTTPClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				3639A14D29D8166E006B1C3C /* SceneDelegate.swift in Sources */,
 				36F73EF929DB243A00CB36F6 /* MovieGenreListHTTPClient.swift in Sources */,
 				3639A17829D859E0006B1C3C /* GenreCell.swift in Sources */,
+				36F73EFB29DB246B00CB36F6 /* URLSessionHTTPClient.swift in Sources */,
 				368C4CCD29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift in Sources */,
 				36F73EE429DB0A8B00CB36F6 /* UITableView+Extension.swift in Sources */,
 				36F73EF029DB1CF700CB36F6 /* MovieListLoaderMessageSpecs.swift in Sources */,
