@@ -30,6 +30,7 @@
 		36F73EF229DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF129DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift */; };
 		36F73EF429DB1F4F00CB36F6 /* RemoteMovieListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF329DB1F4F00CB36F6 /* RemoteMovieListLoader.swift */; };
 		36F73EF729DB21DC00CB36F6 /* MovieListHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */; };
+		36F73EF929DB243A00CB36F6 /* MovieGenreListHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		36F73EF129DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListLoaderOutputMessageSpecs.swift; sourceTree = "<group>"; };
 		36F73EF329DB1F4F00CB36F6 /* RemoteMovieListLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMovieListLoader.swift; sourceTree = "<group>"; };
 		36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListHTTPClient.swift; sourceTree = "<group>"; };
+		36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreListHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */,
+				36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				368C4CC829D96C2F00C29C03 /* UICollectionView+Extension.swift in Sources */,
 				36F73EE229DB09C300CB36F6 /* UIView+Extension.swift in Sources */,
 				3639A14D29D8166E006B1C3C /* SceneDelegate.swift in Sources */,
+				36F73EF929DB243A00CB36F6 /* MovieGenreListHTTPClient.swift in Sources */,
 				3639A17829D859E0006B1C3C /* GenreCell.swift in Sources */,
 				368C4CCD29D9957300C29C03 /* MovieGenreItem+PrototypeData.swift in Sources */,
 				36F73EE429DB0A8B00CB36F6 /* UITableView+Extension.swift in Sources */,
