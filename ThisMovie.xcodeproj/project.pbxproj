@@ -33,6 +33,7 @@
 		36F73EF929DB243A00CB36F6 /* MovieGenreListHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */; };
 		36F73EFB29DB246B00CB36F6 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EFA29DB246B00CB36F6 /* URLSessionHTTPClient.swift */; };
 		36F73EFE29DB2D5800CB36F6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EFD29DB2D5800CB36F6 /* Constant.swift */; };
+		36F73F0029DB383600CB36F6 /* MovieGenreMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EFF29DB383600CB36F6 /* MovieGenreMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreListHTTPClient.swift; sourceTree = "<group>"; };
 		36F73EFA29DB246B00CB36F6 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		36F73EFD29DB2D5800CB36F6 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		36F73EFF29DB383600CB36F6 /* MovieGenreMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 				36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */,
 				36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */,
 				36F73EFA29DB246B00CB36F6 /* URLSessionHTTPClient.swift */,
+				36F73EFF29DB383600CB36F6 /* MovieGenreMapper.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				36F73EEB29DB130A00CB36F6 /* ListMovieGenreMessageSpecs.swift in Sources */,
 				3639A17C29D85BEB006B1C3C /* MovieGenreItem.swift in Sources */,
 				3639A16D29D81A33006B1C3C /* MovieListViewController.swift in Sources */,
+				36F73F0029DB383600CB36F6 /* MovieGenreMapper.swift in Sources */,
 				36F73EF229DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift in Sources */,
 				36F73EF429DB1F4F00CB36F6 /* RemoteMovieListLoader.swift in Sources */,
 				36F73EED29DB13D400CB36F6 /* MovieListPresenter.swift in Sources */,

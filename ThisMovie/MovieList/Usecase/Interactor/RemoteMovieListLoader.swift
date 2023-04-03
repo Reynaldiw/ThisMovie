@@ -61,23 +61,6 @@ private extension Collection where Element == RemoteMovieGenreItem {
     }
 }
 
-final class MovieGenreMapper {
-    private struct Root: Decodable {
-        let genres: [RemoteMovieGenreItem]
-    }
-    
-    private static var OK_200: Int {
-        return 200
-    }
-    
-    static func map(data: Data, response: HTTPURLResponse) throws -> [RemoteMovieGenreItem] {
-        guard response.statusCode == OK_200, let root = try? JSONDecoder().decode(Root.self, from: data)
-        else { throw RemoteMovieListLoader.Error.invalidData }
-        
-        return root.genres
-    }
-}
-
 internal struct RemoteMovieGenreItem: Decodable {
     internal let id: Int
     internal let name: String
