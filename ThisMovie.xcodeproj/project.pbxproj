@@ -28,6 +28,7 @@
 		36F73EED29DB13D400CB36F6 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EEC29DB13D400CB36F6 /* MovieListPresenter.swift */; };
 		36F73EF029DB1CF700CB36F6 /* MovieListLoaderMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EEF29DB1CF600CB36F6 /* MovieListLoaderMessageSpecs.swift */; };
 		36F73EF229DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF129DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift */; };
+		36F73EF429DB1F4F00CB36F6 /* RemoteMovieListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF329DB1F4F00CB36F6 /* RemoteMovieListLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		36F73EEC29DB13D400CB36F6 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
 		36F73EEF29DB1CF600CB36F6 /* MovieListLoaderMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListLoaderMessageSpecs.swift; sourceTree = "<group>"; };
 		36F73EF129DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListLoaderOutputMessageSpecs.swift; sourceTree = "<group>"; };
+		36F73EF329DB1F4F00CB36F6 /* RemoteMovieListLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMovieListLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		3639A16129D81829006B1C3C /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				36F73EF329DB1F4F00CB36F6 /* RemoteMovieListLoader.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				3639A17C29D85BEB006B1C3C /* MovieGenreItem.swift in Sources */,
 				3639A16D29D81A33006B1C3C /* MovieListViewController.swift in Sources */,
 				36F73EF229DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift in Sources */,
+				36F73EF429DB1F4F00CB36F6 /* RemoteMovieListLoader.swift in Sources */,
 				36F73EED29DB13D400CB36F6 /* MovieListPresenter.swift in Sources */,
 				3639A14B29D8166E006B1C3C /* AppDelegate.swift in Sources */,
 				3639A17229D85150006B1C3C /* MovieCell.swift in Sources */,

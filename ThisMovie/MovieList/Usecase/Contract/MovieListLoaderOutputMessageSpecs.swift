@@ -9,14 +9,12 @@ import Foundation
 
 protocol MovieGenreListLoaderOutputMessageSpecs {
     associatedtype Genre
-    typealias Result = Swift.Result<[Genre], Error>
     
-    func completeFetch() -> Result
+    func completeFetch() -> Swift.Result<[Genre], Error>
 }
 
 protocol MovieListLoaderOutputMessageSpecs: MovieGenreListLoaderOutputMessageSpecs {
     associatedtype Movie
-    typealias Result = Swift.Result<[Movie], Error>
     
-    func completeFetch() -> Result
+    func completeFetch() -> Swift.Result<[Movie], Error>
 }
