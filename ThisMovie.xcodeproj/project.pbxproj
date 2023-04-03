@@ -32,6 +32,7 @@
 		36F73EF729DB21DC00CB36F6 /* MovieListHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */; };
 		36F73EF929DB243A00CB36F6 /* MovieGenreListHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */; };
 		36F73EFB29DB246B00CB36F6 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EFA29DB246B00CB36F6 /* URLSessionHTTPClient.swift */; };
+		36F73EFE29DB2D5800CB36F6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EFD29DB2D5800CB36F6 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		36F73EF629DB21DC00CB36F6 /* MovieListHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListHTTPClient.swift; sourceTree = "<group>"; };
 		36F73EF829DB243A00CB36F6 /* MovieGenreListHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreListHTTPClient.swift; sourceTree = "<group>"; };
 		36F73EFA29DB246B00CB36F6 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		36F73EFD29DB2D5800CB36F6 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		3639A16B29D819F9006B1C3C /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				36F73EFC29DB2D4E00CB36F6 /* Helper */,
 				36F73EF529DB21AB00CB36F6 /* API */,
 				36F73EEE29DB1CAD00CB36F6 /* Contract */,
 				3639A16129D81829006B1C3C /* Interactor */,
@@ -242,6 +245,14 @@
 				36F73EFA29DB246B00CB36F6 /* URLSessionHTTPClient.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		36F73EFC29DB2D4E00CB36F6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				36F73EFD29DB2D5800CB36F6 /* Constant.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +336,7 @@
 				36F73EF229DB1E8500CB36F6 /* MovieListLoaderOutputMessageSpecs.swift in Sources */,
 				36F73EF429DB1F4F00CB36F6 /* RemoteMovieListLoader.swift in Sources */,
 				36F73EED29DB13D400CB36F6 /* MovieListPresenter.swift in Sources */,
+				36F73EFE29DB2D5800CB36F6 /* Constant.swift in Sources */,
 				3639A14B29D8166E006B1C3C /* AppDelegate.swift in Sources */,
 				3639A17229D85150006B1C3C /* MovieCell.swift in Sources */,
 				368C4CC829D96C2F00C29C03 /* UICollectionView+Extension.swift in Sources */,
