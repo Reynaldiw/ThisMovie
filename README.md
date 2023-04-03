@@ -4,4 +4,4 @@
 
 To visualize the architecture and dependency between component (Not completed yet).
 
-![](Untitled Diagram.drawio.png)
+![](https://github.com/Reynaldiw/ThisMovie/blob/main/Untitled%20Diagram.drawio.png)
