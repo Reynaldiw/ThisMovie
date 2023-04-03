@@ -25,6 +25,7 @@
 		36F73EE629DB0CEF00CB36F6 /* MovieItemPrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EE529DB0CEF00CB36F6 /* MovieItemPrototypeData.swift */; };
 		36F73EE929DB0EDB00CB36F6 /* ListMovieMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EE829DB0EDB00CB36F6 /* ListMovieMessageSpecs.swift */; };
 		36F73EEB29DB130A00CB36F6 /* ListMovieGenreMessageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EEA29DB130A00CB36F6 /* ListMovieGenreMessageSpecs.swift */; };
+		36F73EED29DB13D400CB36F6 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F73EEC29DB13D400CB36F6 /* MovieListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		36F73EE529DB0CEF00CB36F6 /* MovieItemPrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemPrototypeData.swift; sourceTree = "<group>"; };
 		36F73EE829DB0EDB00CB36F6 /* ListMovieMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieMessageSpecs.swift; sourceTree = "<group>"; };
 		36F73EEA29DB130A00CB36F6 /* ListMovieGenreMessageSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieGenreMessageSpecs.swift; sourceTree = "<group>"; };
+		36F73EEC29DB13D400CB36F6 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		3639A16029D8181A006B1C3C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				36F73EEC29DB13D400CB36F6 /* MovieListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				36F73EEB29DB130A00CB36F6 /* ListMovieGenreMessageSpecs.swift in Sources */,
 				3639A17C29D85BEB006B1C3C /* MovieGenreItem.swift in Sources */,
 				3639A16D29D81A33006B1C3C /* MovieListViewController.swift in Sources */,
+				36F73EED29DB13D400CB36F6 /* MovieListPresenter.swift in Sources */,
 				3639A14B29D8166E006B1C3C /* AppDelegate.swift in Sources */,
 				3639A17229D85150006B1C3C /* MovieCell.swift in Sources */,
 				368C4CC829D96C2F00C29C03 /* UICollectionView+Extension.swift in Sources */,

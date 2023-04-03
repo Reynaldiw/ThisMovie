@@ -14,6 +14,11 @@ final class MovieListViewController: UITableViewController {
         case movies
     }
     
+    typealias Movie = MovieItem
+    typealias MovieGenre = MovieGenreItem
+    
+    private var inputMessage: ListMovieInputMessageSpec!
+    
     private var genreItems = [MovieGenreItem]()
     private var selectedGenre: MovieGenreItem?
     
@@ -22,8 +27,10 @@ final class MovieListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        inputMessage = MovieListPresenter<MovieListViewController>(viewOutputMessage: self)
+                
         configureView()
-        loadGenres()
+        inputMessage.loadGenres()
     }
     
     private func configureView() {
@@ -31,22 +38,20 @@ final class MovieListViewController: UITableViewController {
         tableView.separatorStyle = .none
         tableView.register(MovieCell.nib, forCellReuseIdentifier: MovieCell.identifier)
     }
-    
-    private func loadGenres() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.genreItems = MovieGenreItem.prototypeData
-            self.selectedGenre = self.genreItems.first
-            self.tableView.reloadData()
-            
-            self.loadMovies()
-        }
+}
+
+extension MovieListViewController: ListMovieOutputMessageSpec {
+    func completeLoad(_ movie: [MovieItem]) {
+        movieItems = movie
+        tableView.reloadSections([MovieListSection.movies.rawValue], with: .automatic)
     }
     
-    private func loadMovies() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.movieItems = MovieItem.prototypeData
-            self.tableView.reloadSections([MovieListSection.movies.rawValue], with: .automatic)
-        }
+    func completeLoad(_ genre: [MovieGenreItem]) {
+        genreItems = genre
+        selectedGenre = genre[0]
+        tableView.reloadSections([MovieListSection.genres.rawValue], with: .automatic)
+        
+        inputMessage.loadMovies()
     }
 }
 
